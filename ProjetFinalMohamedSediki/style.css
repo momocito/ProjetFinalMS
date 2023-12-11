@@ -1,0 +1,50 @@
+body { /*Les proportions pour les body, dépendaments du navigateur les proportions change j'utilise google chrome donc pour firefox ou operaGX ça peut changer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }  
+  fieldset {
+    display: block; 
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-bottom: 10px;
+  }
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 6px solid #dbdbdb;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    
+  }
+
+input[type="reset"], /* le dynamisme colorimetrique des inputs effacer et envoyer*/
+input[type="submit"] {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-right: 10px; 
+}
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3; 
+}

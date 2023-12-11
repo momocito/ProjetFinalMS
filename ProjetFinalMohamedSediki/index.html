@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="inscription.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!-- LES VARIABLES POUR LES COORDÉONNÉS -->
+    <fieldset class="Coordonnées"> 
+        <legend>Vos coordonnées</legend>
+        <form action="https://www.youtube.com/watch?v=rwAooQkK1ng" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required><br>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required><br>
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required><br>
+            <label for="mail">Mail :</label>
+            <input type="text" id="mail" name="mail" placeholder="votre mail" required><br>
+            <label for="site">Votre site :</label>
+            <input type="text" id="site" name="site" required><br>
+            <label for="code">Code :</label>
+            <input type="password" minlength="8" maxlength="8" id="code" name="code" ><br></label>
+            <label for="genre">Genre:</label>
+                <input type="radio" name="gender" value="male"> Homme
+                <input type="radio" name="gender" value="female"> Femme
+            <br></label>
+
+            <label for="pays">Pays :</label>
+<select id="pays" name="pays">
+    <option value="">Votre pays</option>
+    <optgroup label="Afrique">
+        <option value="tunisie">Tunisie</option>
+        <option value="algerie">Algérie</option>
+        <option value="maroc">Maroc</option>
+        <option value="mauritanie">Mauritanie</option>
+    </optgroup>
+    <optgroup label="Europe">
+      <option value="france">France</option>
+      <option value="belgique">Belgique</option>
+      <option value="italie">Italie</option>
+      <option value="allemagne">Allemagne</option>
+    </optgroup>
+    <optgroup label="Amérique">
+        <option value="canada">fr</option>
+      <option value="canada">Canada</option>
+      <option value="argentine">Argentine</option>
+    </optgroup>
+    <optgroup label="Autres">
+        <option value="asie">Europe</option>
+      <option value="asie">Asie</option>
+      <option value="ameriques">Amériques</option>
+      <option value="ocenie">Océanie</option>
+    </optgroup>
+ 
+
+</select>
+</fieldset>
+<fieldset>
+<legend><b>Vos Formations</b></legend> <!-- LES VARIABLES POUR VOS FORMATIONS -->
+      <input type="checkbox" id="formation1" name="formation1" value="formation1">
+      <label for="formation1">Formation en HTML5</label><br>
+      <input type="checkbox" id="formation2" name="formation2" value="formation2">
+      <label for="formation2">Formation en CSS3</label><br>
+      <input type="checkbox" id="formation3" name="formation3" value="formation3">
+      <label for="formation3">Formation en JS</label><br>
+      <label for="commentaire">Commentaire :</label><br>
+      <textarea id="commentaire" name="commentaire" rows="5" cols="50" placeholder="Décrivez vos besoins en formation"></textarea><br>
+    </fieldset>
+
+    <fieldset> <!-- LES VARIABLES POUR L'ENTRÉE DE FICHIER PHOTOS -->
+        <legend><b>Envoyez nous votre photo</b></legend>
+        <input type="file" id="fichier" name="fichier" accept=".pdf, .doc" required><br>
+        <input type="hidden" name="MAX_FILE_SIZE" value="10240"><br>
+        <input type="reset" value="Effacer">
+        <input type="submit" value="Envoyer">
+      </fieldset>
+</body>
+</html>
